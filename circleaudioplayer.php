@@ -13,7 +13,8 @@ Domain Path: /languages
 */
 add_action('wp_enqueue_scripts','circleaudioplayer_assets');
 function circleaudioplayer_assets(){
-    wp_enqueue_style( 'progres-bar', plugins_url( '/progres-bar.css' , __FILE__ ));
+	wp_register_style( 'progres-bar', plugins_url( '/progres-bar.css' , __FILE__ ));
+	wp_enqueue_style('progres-bar');
 	wp_register_script( 'player', plugins_url( '/player.js' , __FILE__ ),array("jquery"),'0.0.1',true);
     wp_register_script( 'main', plugins_url( '/main.js' , __FILE__ ), array("jquery","player") ,'1.0.2',true);
 
