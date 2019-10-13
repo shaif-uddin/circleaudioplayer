@@ -1,4 +1,4 @@
-# circleaudioplayer
+# Circle Audio Player
  Circle Audio Player WordPress Plugin
  Easily Integrate in any WordPress Website
  Example: 
