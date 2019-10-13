@@ -14,9 +14,8 @@ Domain Path: /languages
 add_action('wp_enqueue_scripts','circleaudioplayer_assets');
 function circleaudioplayer_assets(){
     wp_enqueue_style( 'progres-bar', plugins_url( '/progres-bar.css' , __FILE__ ));
-	wp_enqueue_script( 'player', plugins_url( '/player.js' , __FILE__ ),array("jquery"),'0.0.1',false);
-    wp_enqueue_script( 'main', plugins_url( '/main.js' , __FILE__ ), array("jquery","player") ,'1.0.2',false);
-
+	wp_enqueue_script( 'player', plugins_url( '/player.js' , __FILE__ ),array("jquery"),'0.0.1',true);
+    wp_enqueue_script( 'main', plugins_url( '/main.js' , __FILE__ ), array("jquery","player") ,'1.0.2',true);
 }
 
 function circleaudioplayer( $atts ) {
