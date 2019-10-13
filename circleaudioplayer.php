@@ -3,7 +3,7 @@
 Plugin Name: Circle Audio Player
 Plugin URI: https://github.com/shaif-uddin/circleaudioplayer
 Description: Play Circle Audio Player for WordPress
-Version: 1.0
+Version: 1.1
 Author: Shaif Uddin Ahamed
 Author URI: http://tech.sugrihini.com
 License: GPL2
