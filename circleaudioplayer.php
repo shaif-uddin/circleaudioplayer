@@ -24,8 +24,10 @@ function circleaudioplayer( $atts ) {
 	$a = shortcode_atts( array(
 		'src' => ''
 	), $atts );
+	wp_enqueue_style('progres-bar');
 	wp_enqueue_script('player');
 	wp_enqueue_script('main');
+
 	return '<div class="mediPlayer">
     <audio class="listen" preload="none" data-size="250" src="' . $a['src'] . '"></audio></div></div>';
 
