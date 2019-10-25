@@ -28,7 +28,7 @@ function circleaudioplayer( $atts ) {
 	wp_enqueue_script('player');
 	wp_enqueue_script('main');
 
-	return '<div class="mediPlayer">
+	return '<div class="mediPlayer"><div>
     <audio class="listen" preload="none" data-size="250" src="' . $a['src'] . '"></audio></div></div>';
 
 }
